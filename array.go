@@ -13,7 +13,7 @@ func main(){
 
 	var x = make([]string, 2)
 	x[0] = "mayukh"
-	x[1] = "hello"
+	x[1] = "lamine"
 
 	// out
 	for i := range 2 {
@@ -22,4 +22,12 @@ func main(){
 
 	//cap -> capacity. maap bole deye
 	fmt.Println(cap(x))
+
+	var y = make([]int, 7)
+	y = append(y, 10)
+	y = append(y, 20)
+	fmt.Println(y)
+
+	fmt.Println(cap(y)) // returns 14. increases the size to accommodate more elements. a self-expanding party hall where more people means bigger hall.
+	
 }
